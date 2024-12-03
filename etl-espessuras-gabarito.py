@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-diretorio_novos_dados = r'H:/Business Intelligence/Clientes/AMP/Redução/Dados Não Extraídos/'
+diretorio_novos_dados = r'caminho do arquivo'
 arquivos = os.listdir(diretorio_novos_dados)
 
 cabeçalhos = ['Canal', 'DI', 'Data', 'Prod Acumulada', 'Prod DI']
@@ -35,8 +35,8 @@ def extrair_dados(df_skip_rows, info_skip_rows,arquivos):   # Extraindo informa�
     return df_combinado
 
 
-diretorio_dados_coletados = r'H:/Business Intelligence/Clientes/AMP/Redução/Dados Extraídos/'
-diretorio_arquivo_final = r'H:/Business Intelligence/Clientes/AMP/Redução/Base_Dados_Espessuras.xlsx'
+diretorio_dados_coletados = r'caminho do arquivo'
+diretorio_arquivo_final = r'caminho do arquivo, nome do arquivo com extensão'
 
 for arquivo in range(len(arquivos)):
     df_temporario = extrair_dados(3,0,arquivos[arquivo])
