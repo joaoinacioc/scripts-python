@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 import ssl
 import datetime
 
-filepath = r'C:/Users/J5741713/Downloads/dados-extraídos/'
+filepath = r'caminho'
 sql_sensors_AMT = 'cent_cent04'
 sql_sensors_CSN_CP03_A = 'cent_cent02'
 sql_sensors_CSN_CP03_B = 'cent_cent03'
@@ -14,7 +14,7 @@ sensors_list = [sql_sensors_AMT, sql_sensors_CSN_CP03_A, sql_sensors_CSN_CP03_B]
 
 def etl(sql):
     # Formato do envio mysql+mysqlconnector://<user>:<password>@<host/ip>/dbtogo
-    url = 'mysql+mysqlconnector://tmxinsertuser:moasf0=!$as9zx@shwdbmysql01.mysql.database.azure.com/csn'
+    url = 'mysql+mysqlconnector://"user":"password"@"host ip"/"database"'
 
     # Estabelecendo conexão com o banco de dados do MySQL
     engine = create_engine(url)
