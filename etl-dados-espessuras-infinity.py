@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-file_path = r'H:/Business Intelligence/Clientes/AMP/Redução/Dados Espessuras Não Extraídos/'
-file = 'AMP_AF1CP1_DI1.xlsx'
+file_path = r'caminho do arquivo'
+file = 'nome do arquivo'
 
 new_headers = ['Metro', 'Desgaste Esquerdo (mm)', 'Desgaste Direito (mm)', 'Taxa Esquerdo (mm/ton)', 'Taxa Direito (mm/ton)']
 new_column_name = ['Date']
