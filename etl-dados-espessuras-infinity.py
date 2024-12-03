@@ -43,4 +43,4 @@ for y in range(0,lenght, 1):
 df_final['Data_medicao'] = df_date[0]
 # df_dados_espessuras = pd.concat([df_dados_espessuras, df_final], ignore_index=True)
 
-# df_final.to_excel(r'H:/Business Intelligence/Clientes/AMP/Redução/Base_Dados_Espessuras.xlsx')
+# df_final.to_excel(r'caminho do arquivo e nome do arquivo com extensão')
