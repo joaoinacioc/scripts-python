@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 # Lista de schemas do db MySQL
 db = ['cent_cent02', 'cent_cent03', 'cent_cent04']
 # Formato do envio mysql+mysqlconnector://<user>:<password>@<host/ip>/dbtogo
-url = 'mysql+mysqlconnector://tmxinsertuser:moasf0=!$as9zx@shwdbmysql01.mysql.database.azure.com/csn'
+url = 'mysql+mysqlconnector://"user":"password"@"host ip"/"database"'
 
 # Função para verificar a quantidade de linhas do df
 def last_day_df_length(db, url):
