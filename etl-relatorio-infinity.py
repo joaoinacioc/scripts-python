@@ -27,7 +27,7 @@ def find_table_end(df):
 
 
 # Caminho do arquivo
-directory = r'H:/Business Intelligence/Clientes/AMP/Redução/Dados Scan Infinity/'
+directory = r'Caminho do Arquivo'
 files = os.listdir(directory)
 headers = ['metro', 'desgaste_le_esq', 'desgaste_le_dir', 'taxa_desg_le_esq', 'taxa_desg_le_dir',
            'desgaste_lg_esq', 'desgaste_lg_dir', 'taxa_desg_lg_esq', 'taxa_desg_lg_dir']
@@ -89,4 +89,4 @@ for file in files:
     concatenated_df = pd.concat([concatenated_df, df_final], ignore_index=True)
 
 concatenated_df.drop(['canal_evento'], axis=1, inplace=True)
-concatenated_df.to_excel(r'H:/Business Intelligence/Clientes/AMP/Redução/Base_Dados_Espesssuras_Infinity.xlsx', sheet_name='Dados Espessuras', index=False)
+concatenated_df.to_excel(r'Caminho e nome do arquivo com extensão', sheet_name='Dados Espessuras', index=False)
